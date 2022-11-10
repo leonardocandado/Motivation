@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udemy.motivation.ui.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/purple">
+
+         <ImageView
+             android:id="@+id/image_all"
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_weight="1"
+             android:src="@drawable/ic_all_inclusive" />
+
+        <ImageView
+            android:id="@+id/image_happy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy" />
+
+        <ImageView
+            android:id="@+id/image_sunny"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_sunny" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textSaudacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearMenu"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:text="Olá, Kotlin!"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:elevation="5dp"
+        android:layout_below="@id/textPhrase"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_purple"/>
+
+    <Button
+        android:id="@+id/buttonNewPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_phrase"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_purple"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
